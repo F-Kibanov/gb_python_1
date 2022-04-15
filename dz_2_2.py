@@ -13,12 +13,19 @@ def convert_list_in_str(my_list: list) -> str:
 
     print(my_list)  # обработанный список
 
-    str_out = ' '
+    str_out = ''
     for j in range(len(my_list)):
-        str_out += my_list[j]
-        str_out += ' '
+        if my_list[j].isdigit() or my_list[j] == '"' or my_list[j].startswith ('+' or '-'):
+            str_out += ''
+            str_out += my_list[j]
+            str_out += ''
+        else:
+            str_out += ' '
+            str_out += my_list[j]
+            str_out += ' '
 
-    return str_out  # обработанная строка
+    return str_out
+
 
 
 my_list = ['в', '5', 'часов', '17', 'минут', 'температура', 'воздуха', 'была', '+5', 'градусов']
