@@ -1,0 +1,51 @@
+(pythonProject5) pip show pillow
+        /home/user/Learning_python/GIT/pythonProject5/lib/python3.9/site-packages/_distutils_hack/__init__.py:30: UserWarning: Setuptools is replacing distutils.
+        warnings.warn("Setuptools is replacing distutils.")
+WARNING: Package(s) not found: pillow
+(pythonProject5) pip install pillow
+Collecting pillow
+  Downloading Pillow-9.1.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 1.2 MB/s eta 0:00:00
+Installing collected packages: pillow
+Successfully installed pillow-9.1.0
+(pythonProject5) pip show pillow
+Name: Pillow
+Version: 9.1.0
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: /home/user/Learning_python/GIT/pythonProject5/lib/python3.9/site-packages
+Requires:
+Required-by:
+(pythonProject5) python -m venv virt
+(pythonProject5) dir
+dz_4_1.txt  dz_4_3.py  dz_4_5.py  __pycache__  task_4_4.py  utils.py  virt
+(pythonProject5) source virt/bin/activate
+(virt) (pythonProject5) pip freeze
+certifi==2021.10.8
+charset-normalizer==2.0.12
+conda==4.3.16
+distlib==0.3.4
+filelock==3.6.0
+idna==3.3
+pipenv==2022.3.23
+platformdirs==2.5.1
+pycosat==0.6.3
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+urllib3==1.26.9
+virtualenv==20.13.4
+virtualenv-clone==0.5.7
+(virt) (pythonProject5) pip install pillow==7.1.1
+Collecting pillow==7.1.1
+  Downloading Pillow-7.1.1.tar.gz (38.9 MB)
+     |████████████████████████████████| 38.9 MB 140 kB/s
+Using legacy 'setup.py install' for pillow, since package 'wheel' is not installed.
+Installing collected packages: pillow
+    Running setup.py install for pillow ... done
+Successfully installed pillow-7.1.1
+(virt) (pythonProject5) deactivate
+(pythonProject5)
