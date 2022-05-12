@@ -5,16 +5,15 @@ class TrafficLight:
     __color = 'off'
 
     def running(self):
-        while True:
-            self.__color = 'red'
-            print(self.__color)
-            sleep(7)
-            self.__color = 'yellow'
-            print(self.__color)
-            sleep(2)
-            self.__color = 'green'
-            print(self.__color)
-            sleep(10)
+        self.__color = 'red'
+        print(self.__color)
+        sleep(4)
+        self.__color = 'yellow'
+        print(self.__color)
+        sleep(2)
+        self.__color = 'green'
+        print(self.__color)
+        sleep(3)
 
 
 if __name__ == '__main__':
